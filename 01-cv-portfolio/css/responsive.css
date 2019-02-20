@@ -123,6 +123,7 @@
 	--------------------------------- */
 
   .portfolio-section .p-item {
+    display: block;
     width: 95%;
     margin: 10px auto;
   }
