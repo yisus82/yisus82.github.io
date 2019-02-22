@@ -398,7 +398,8 @@ header .downlad-btn:hover {
 }
 
 .portfolio-section .p-item a {
-  display: inline;
+  display: inline-block;
+  padding: 10px;
 }
 
 .portfolio-section .p-item.p-item-2 .img:first-child {

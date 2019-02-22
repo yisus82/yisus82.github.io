@@ -123,14 +123,7 @@
 	--------------------------------- */
 
   .portfolio-section .p-item {
-    width: 95%;
-    margin: 10px auto;
-  }
-	
-  .portfolio-section .p-item img {
-    display: block;
-    width: 95%;
-    margin: 0 auto;
+    margin-left: 10px;
   }
 }
 
