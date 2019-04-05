@@ -261,7 +261,7 @@ header .info .right-area {
   padding: 15px 30px;
   border-radius: 4px;
   margin: 1rem auto;
-  min-width: 300px;
+  width: 300px;
   box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.3);
   background: #ffad01;
   color: #fff;
