@@ -23,6 +23,7 @@ const updateCheckboxAndLabel = isDark => {
   const newAriaLabel = isDark ? 'Change to light theme' : 'Change to dark theme';
   document.querySelector('#theme-label').setAttribute('aria-label', newAriaLabel);
   document.querySelector('#theme-label').setAttribute('title', newAriaLabel);
+  document.querySelector('#theme-label').classList.toggle('dark', isDark);
   document.querySelector('#theme').checked = isDark;
 };
 

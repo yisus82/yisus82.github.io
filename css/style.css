@@ -26,9 +26,41 @@ body {
 
 header {
   display: flex;
+  justify-content: end;
+  align-items: top;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#theme {
+  display: none;
+}
+
+#theme-label {
+  display: inline-block;
+  background-image: url('../img/moon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+}
+
+#theme-label.dark {
+  display: inline-block;
+  background-image: url('../img/sun.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   gap: 1rem;
 }
 
@@ -38,24 +70,9 @@ h1 {
   text-align: center;
 }
 
-#theme {
-  display: none;
-}
-
-#theme + label {
-  display: inline-block;
-  background-image: url('../img/moon.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 80px;
-  width: 80px;
-}
-
-#theme:checked + label {
-  display: inline-block;
-  background-image: url('../img/sun.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 80px;
-  width: 80px;
+#profile {
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-fg);
+  border-radius: 20%;
 }
