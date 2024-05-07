@@ -6,11 +6,13 @@
 [data-theme='light'] {
   --color-bg: #cccccc;
   --color-fg: #7359f8;
+  --color-icon: #222222;
 }
 
 [data-theme='dark'] {
   --color-bg: #222222;
   --color-fg: #7359f8;
+  --color-icon: #cccccc;
 }
 
 body {
@@ -29,7 +31,7 @@ header {
   justify-content: end;
   align-items: top;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
 }
@@ -43,8 +45,8 @@ header {
   background-image: url('../img/moon.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
 }
 
 #theme-label.dark {
@@ -52,8 +54,8 @@ header {
   background-image: url('../img/sun.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
 }
 
 main {
@@ -75,4 +77,49 @@ h1 {
   border-style: solid;
   border-color: var(--color-fg);
   border-radius: 20%;
+}
+
+#job {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#technologies {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons li {
+  list-style-type: none;
+}
+
+.icons li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-fg);
+  border-radius: 50%;
+  color: var(--color-icon);
+  text-decoration: none;
+}
+
+.icons li a:hover {
+  background-color: var(--color-fg);
+  color: var(--color-bg);
+}
+
+.icons li a i {
+  font-size: 2rem;
 }
