@@ -24,7 +24,7 @@ body {
   font-family: 'RetroGaming', monospace;
   background-color: var(--color-bg);
   color: var(--color-fg);
-  padding: 1rem;
+  padding: 3rem 1rem;
   position: relative;
 }
 
@@ -172,21 +172,21 @@ section h2 {
   text-align: center;
 }
 
-.workplace {
+.place {
   font-size: 1.2rem;
   text-align: center;
 }
 
-.workplace a {
+.place a {
   color: var(--color-accent);
   text-decoration: none;
 }
 
-.workplace a:hover {
+.place a:hover {
   text-decoration: underline;
 }
 
-.period {
+.date {
   font-size: 1rem;
   text-align: center;
 }
@@ -200,6 +200,40 @@ section h2 {
 }
 
 .tasks li {
+  margin: 0.5rem;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.education {
+  background-color: var(--color-fg);
+  color: var(--color-accent);
+  padding: 1rem;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-fg);
+  border-radius: 12px;
+}
+
+.course {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.details {
+  list-style-type: none;
+}
+
+.details li::before {
+  content: '📌 ';
+}
+
+.details li {
   margin: 0.5rem;
 }
 
