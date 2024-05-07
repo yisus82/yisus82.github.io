@@ -24,6 +24,7 @@ body {
   font-family: 'RetroGaming', monospace;
   background-color: var(--color-bg);
   color: var(--color-fg);
+  padding: 1rem;
 }
 
 header {
@@ -32,8 +33,8 @@ header {
   align-items: top;
   width: 100%;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0.5em;
+  right: 0.5em;
 }
 
 #theme {
@@ -95,6 +96,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 0;
 }
 
 .icons li {
