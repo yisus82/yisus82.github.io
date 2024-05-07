@@ -1,6 +1,16 @@
 @font-face {
-  font-family: "RetroGaming";
-  src: url("../fonts/RetroGaming.ttf");
+  font-family: 'RetroGaming';
+  src: url('../fonts/RetroGaming.ttf');
+}
+
+[data-theme='light'] {
+  --color-bg: #cccccc;
+  --color-fg: #7359f8;
+}
+
+[data-theme='dark'] {
+  --color-bg: #222222;
+  --color-fg: #7359f8;
 }
 
 body {
@@ -9,11 +19,43 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "RetroGaming", monospace;
+  font-family: 'RetroGaming', monospace;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
 }
 
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+#theme {
+  display: none;
+}
+
+#theme + label {
+  display: inline-block;
+  background-image: url('../img/moon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+}
+
+#theme:checked + label {
+  display: inline-block;
+  background-image: url('../img/sun.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  width: 80px;
 }
