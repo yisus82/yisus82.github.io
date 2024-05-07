@@ -6,13 +6,13 @@
 [data-theme='light'] {
   --color-bg: #cccccc;
   --color-fg: #7359f8;
-  --color-icon: #222222;
+  --color-accent: #222222;
 }
 
 [data-theme='dark'] {
   --color-bg: #222222;
   --color-fg: #7359f8;
-  --color-icon: #cccccc;
+  --color-accent: #cccccc;
 }
 
 body {
@@ -113,7 +113,7 @@ h1 {
   border-style: solid;
   border-color: var(--color-fg);
   border-radius: 50%;
-  color: var(--color-icon);
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -124,4 +124,21 @@ h1 {
 
 .icons li a i {
   font-size: 2rem;
+}
+
+#resume {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--color-fg);
+  color: var(--color-accent);
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-fg);
+  border-radius: 12px;
+}
+
+#resume:hover {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
 }
