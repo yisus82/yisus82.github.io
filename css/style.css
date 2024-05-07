@@ -166,7 +166,7 @@ section h2 {
   border-style: solid;
   border-color: var(--color-fg);
   border-radius: 12px;
-  width: 30%;
+  width: 30vw;
   min-width: 300px;
 }
 
@@ -200,7 +200,7 @@ section h2 {
   border-style: solid;
   border-color: var(--color-fg);
   border-radius: 12px;
-  width: 30%;
+  width: 30vw;
   min-width: 300px;
 }
 
@@ -256,7 +256,7 @@ section h2 {
   border-style: solid;
   border-color: var(--color-fg);
   border-radius: 12px;
-  width: 30%;
+  width: 30vw;
   min-width: 300px;
 }
 
