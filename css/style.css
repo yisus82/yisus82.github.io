@@ -4,7 +4,7 @@
 }
 
 [data-theme='light'] {
-  --color-bg: #cccccc;
+  --color-bg: #dddddd;
   --color-fg: #7359f8;
   --color-accent: #222222;
 }
@@ -12,7 +12,7 @@
 [data-theme='dark'] {
   --color-bg: #222222;
   --color-fg: #7359f8;
-  --color-accent: #cccccc;
+  --color-accent: #dddddd;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-fg);
   padding: 1rem;
+  position: relative;
 }
 
 header {
@@ -141,4 +142,78 @@ h1 {
 #resume:hover {
   background-color: var(--color-bg);
   color: var(--color-fg);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.experience {
+  background-color: var(--color-fg);
+  color: var(--color-accent);
+  padding: 1rem;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-fg);
+  border-radius: 12px;
+}
+
+.job {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.workplace {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.workplace a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.workplace a:hover {
+  text-decoration: underline;
+}
+
+.period {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.tasks {
+  list-style-type: none;
+}
+
+.tasks li::before {
+  content: '✅ ';
+}
+
+.tasks li {
+  margin: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0.5em;
+  width: 100%;
+  height: 1em;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
 }
