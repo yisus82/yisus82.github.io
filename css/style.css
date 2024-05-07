@@ -1,6 +1,19 @@
+@font-face {
+  font-family: "RetroGaming";
+  src: url("../fonts/RetroGaming.ttf");
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  font-family: "RetroGaming", monospace;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
