@@ -1,15 +1,16 @@
 @font-face {
-  font-family: 'RetroGaming';
-  src: url('../fonts/RetroGaming.ttf');
+  font-family: "RetroGaming";
+  src: url("../fonts/RetroGaming.ttf");
+  font-display: swap;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   --color-bg: #dddddd;
   --color-fg: #7359f8;
   --color-accent: #222222;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --color-bg: #222222;
   --color-fg: #7359f8;
   --color-accent: #dddddd;
@@ -21,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: 'RetroGaming', monospace;
+  font-family: "RetroGaming", monospace;
   background-color: var(--color-bg);
   color: var(--color-fg);
   padding: 3rem 1rem;
@@ -44,7 +45,7 @@ header {
 
 #theme-label {
   display: inline-block;
-  background-image: url('../img/moon.svg');
+  background-image: url("../img/moon.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 50px;
@@ -53,7 +54,7 @@ header {
 
 #theme-label.dark {
   display: inline-block;
-  background-image: url('../img/sun.svg');
+  background-image: url("../img/sun.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 50px;
@@ -229,7 +230,7 @@ section h2 {
 }
 
 .tasks li::before {
-  content: '✅ ';
+  content: "✅ ";
 }
 
 .tasks li {
@@ -266,7 +267,7 @@ section h2 {
 }
 
 .details li::before {
-  content: '📌 ';
+  content: "📌 ";
 }
 
 .details li {
