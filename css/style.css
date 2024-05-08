@@ -164,8 +164,12 @@ section h2 {
   border-style: solid;
   border-color: var(--color-fg);
   border-radius: 12px;
-  width: 30vw;
+  width: 18vw;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio a {
@@ -178,8 +182,7 @@ section h2 {
 }
 
 .portfolio img {
-  width: 100%;
-  max-height: 300px;
+  width: 300px;
 }
 
 #experience {
