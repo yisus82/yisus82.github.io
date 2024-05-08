@@ -123,10 +123,6 @@ h1 {
   color: var(--color-bg);
 }
 
-.icons li a i {
-  font-size: 2rem;
-}
-
 #resume {
   display: inline-block;
   text-decoration: none;
