@@ -199,6 +199,11 @@ section h2 {
   text-align: center;
 }
 
+.controls {
+  padding: 0;
+  list-style-type: none;
+}
+
 .links {
   display: flex;
   justify-content: center;
