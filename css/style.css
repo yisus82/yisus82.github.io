@@ -166,10 +166,10 @@ section h2 {
   border-radius: 12px;
   width: 18vw;
   min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  align-content: space-between;
+  gap: 1rem;
 }
 
 .portfolio a {
@@ -183,6 +183,37 @@ section h2 {
 
 .portfolio img {
   width: 300px;
+}
+
+.portfolio div p {
+  text-align: center;
+}
+
+.name {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.description {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links a {
+  color: var(--color-accent);
+  text-decoration: none;
+  text-align: center;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
 
 #experience {
